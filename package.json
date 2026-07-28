@@ -3,7 +3,9 @@
         "@babel/runtime": "^7.26.0",
         "core-js": "^3.39.0",
         "dotenv": "^16.4.7",
-        "express": "^4.21.2"
+        "express": "^4.21.2",
+        "glightbox": "^3.3.1",
+        "swiper": "^14.0.6"
     },
     "devDependencies": {
         "@babel/core": "^7.26.0",

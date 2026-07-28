@@ -186,6 +186,66 @@
         @apply relative aspect-[9/16] overflow-hidden rounded-2xl border border-white/10 bg-brand-panel;
     }
 
+    .video-swiper-wrap {
+        @apply relative;
+    }
+
+    .video-swiper {
+        @apply overflow-visible pb-12;
+    }
+
+    .video-swiper .swiper-slide {
+        @apply h-auto;
+    }
+
+    .video-card {
+        @apply relative block aspect-[9/16] overflow-hidden rounded-2xl border border-white/10 bg-brand-panel shadow-card transition duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-glow focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-brand-ink;
+    }
+
+    .video-card__media {
+        @apply pointer-events-none h-full w-full object-cover;
+    }
+
+    .video-card__play {
+        @apply absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-hero-gradient text-brand-ink shadow-glow transition duration-300;
+    }
+
+    .video-card:hover .video-card__play {
+        @apply scale-110;
+    }
+
+    .video-card__label {
+        @apply absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-ink/90 via-brand-ink/40 to-transparent px-4 pb-4 pt-10 text-sm font-semibold text-white;
+    }
+
+    .video-swiper .swiper-button-prev,
+    .video-swiper .swiper-button-next {
+        @apply h-11 w-11 rounded-full border border-white/10 bg-brand-ink/80 text-accent shadow-card backdrop-blur-md transition hover:border-accent/40 hover:bg-brand-panel;
+        --swiper-navigation-size: 18px;
+        --swiper-navigation-color: #2EE6C5;
+        top: 42%;
+    }
+
+    .video-swiper .swiper-button-prev {
+        left: -0.25rem;
+    }
+
+    .video-swiper .swiper-button-next {
+        right: -0.25rem;
+    }
+
+    .video-swiper .swiper-pagination-bullet {
+        @apply bg-white/35 opacity-100;
+    }
+
+    .video-swiper .swiper-pagination-bullet-active {
+        @apply bg-accent;
+    }
+
+    .glightbox-clean .gslide-media {
+        box-shadow: 0 24px 60px -16px rgba(7, 11, 20, 0.85);
+    }
+
     [data-modal] {
         @apply fixed inset-0 z-50 hidden items-center justify-center bg-brand-ink/70 p-4 backdrop-blur-sm;
     }

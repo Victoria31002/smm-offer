@@ -53,6 +53,7 @@
                 <ul class="flex flex-col gap-1 lg:flex-row lg:items-center lg:gap-5">
                     <li><a data-nav-link class="nav-link block py-2 lg:py-0" href="#section-about">Кто я</a></li>
                     <li><a data-nav-link class="nav-link block py-2 lg:py-0" href="#section-portfolio">Форматы</a></li>
+                    <li><a data-nav-link class="nav-link block py-2 lg:py-0" href="#section-gallery">Видео</a></li>
                     <li><a data-nav-link class="nav-link block py-2 lg:py-0" href="#section-system">Услуги</a></li>
                     <li><a data-nav-link class="nav-link block py-2 lg:py-0" href="#section-packages">Пакеты</a></li>
                     <li><a data-nav-link class="nav-link block py-2 lg:py-0" href="#section-faq">FAQ</a></li>
@@ -88,7 +89,7 @@
             <div class="section-blob-orange !left-auto !right-1/4 !top-1/3" aria-hidden="true"></div>
             <div class="relative mx-auto grid max-w-6xl items-center gap-12 px-4 lg:grid-cols-2 lg:px-6">
                 <div data-reveal>
-                    <span class="tag tag--bright">Cyprus Total Service · SMM</span>
+                    <span class="tag tag--bright !px-4 !py-1.5 text-sm">Cyprus Total Service · SMM</span>
                     <h1 class="mt-4 font-extrabold leading-tight tracking-tight">
                         <span class="block text-4xl text-gradient sm:text-5xl lg:text-6xl">Заявки на просмотр и&nbsp;бронь</span>
                         <span class="mt-3 block text-xl text-white sm:text-2xl lg:text-3xl">через короткий контент и&nbsp;рекламу на&nbsp;Северном Кипре</span>
@@ -123,9 +124,6 @@
                     <div class="hero-frame">
                         <div class="relative mx-auto aspect-[4/5] max-w-sm">
                             <img src="./assets/images/hero-arch.jpg" alt="Премиум-вилла — объект для Reels и TikTok" width="400" height="500" class="h-full w-full rounded-2xl object-cover shadow-md">
-                            <div class="absolute -bottom-4 -left-4 w-[44%] aspect-[3/4] overflow-hidden rounded-2xl shadow-glow ring-2 ring-accent/40">
-                                <img src="./assets/images/hero-portrait.png" alt="Виктория — SMM-специалист Cyprus Total Service" width="176" height="234" class="h-full w-full object-cover object-center">
-                            </div>
                         </div>
                         <div class="mt-6 flex flex-wrap justify-center gap-2">
                             <span class="tag">TikTok</span>
@@ -224,6 +222,65 @@
                         <span class="stat-pill__value !text-xl">UGC-стиль</span>
                         <p class="mt-2 text-sm text-slate-400">Живой кадр в&nbsp;кадре — выше доверие</p>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video gallery -->
+        <section id="section-gallery" class="section-shell scroll-mt-header bg-mesh-soft py-16 lg:py-24">
+            <div class="section-blob-pink !left-auto !right-10" aria-hidden="true"></div>
+            <div class="section-blob-violet !bottom-0 !top-auto" aria-hidden="true"></div>
+            <div class="relative mx-auto max-w-6xl px-4 lg:px-6">
+                <div class="text-center" data-reveal>
+                    <h2 class="section-title section-title--accent section-title--center">Примеры роликов</h2>
+                    <p class="section-subtitle mx-auto">Свайпайте галерею и&nbsp;открывайте видео на&nbsp;полный экран</p>
+                </div>
+
+                <div class="video-swiper-wrap mt-12" data-reveal>
+                    <div class="swiper video-swiper" data-video-swiper>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="./assets/video/2.mp4" class="video-card" data-video-gallery data-gallery="works" data-type="video" data-effect="fade" aria-label="Открыть видео 1">
+                                    <video class="video-card__media" src="./assets/video/2.mp4#t=0.1" muted playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
+                                    <span class="video-card__play" aria-hidden="true">
+                                        <svg class="h-8 w-8" aria-hidden="true"><use href="#icon-play"></use></svg>
+                                    </span>
+                                    <span class="video-card__label">Walkthrough</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./assets/video/5.mp4" class="video-card" data-video-gallery data-gallery="works" data-type="video" data-effect="fade" aria-label="Открыть видео 2">
+                                    <video class="video-card__media" src="./assets/video/5.mp4#t=0.1" muted playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
+                                    <span class="video-card__play" aria-hidden="true">
+                                        <svg class="h-8 w-8" aria-hidden="true"><use href="#icon-play"></use></svg>
+                                    </span>
+                                    <span class="video-card__label">Lifestyle</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./assets/video/reels.mp4" class="video-card" data-video-gallery data-gallery="works" data-type="video" data-effect="fade" aria-label="Открыть Reels">
+                                    <video class="video-card__media" src="./assets/video/reels.mp4#t=0.1" muted playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
+                                    <span class="video-card__play" aria-hidden="true">
+                                        <svg class="h-8 w-8" aria-hidden="true"><use href="#icon-play"></use></svg>
+                                    </span>
+                                    <span class="video-card__label">Reels</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./assets/video/cruise-tour.mp4" class="video-card" data-video-gallery data-gallery="works" data-type="video" data-effect="fade" aria-label="Открыть обзор Cruise">
+                                    <video class="video-card__media" src="./assets/video/cruise-tour.mp4#t=0.1" muted playsinline preload="metadata" tabindex="-1" aria-hidden="true"></video>
+                                    <span class="video-card__play" aria-hidden="true">
+                                        <svg class="h-8 w-8" aria-hidden="true"><use href="#icon-play"></use></svg>
+                                    </span>
+                                    <span class="video-card__label">Обзор Cruise</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
         </section>
