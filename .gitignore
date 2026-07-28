@@ -1,0 +1,24 @@
+### Node ###
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+node_modules/
+.npm
+.node_repl_history
+.env
+.env.test
+.env.production
+
+### Build ###
+dist/
+.vercel
+
+### Code ###
+.settings/
+.vscode/
+.idea
+
+### Local screenshots ###
+assets/images/c__Users_*

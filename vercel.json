@@ -1,0 +1,12 @@
+{
+    "buildCommand": "npm run build:vercel",
+    "outputDirectory": ".",
+    "devCommand": "npm start",
+    "installCommand": "npm install --include=dev",
+    "framework": null,
+    "functions": {
+        "api/contact.js": {
+            "maxDuration": 10
+        }
+    }
+}

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/svg+xml" href="/favicon.svg">
+
+    <title>Cyprus Total Service — SMM | Северный Кипр</title>
+    <meta name="description" content="SMM для премиум-недвижимости на Северном Кипре: съёмка, Reels/TikTok, Meta Ads и заявки на просмотр и бронь.">
+    <link rel="canonical" href="https://smm-viktoryia.vercel.app/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smm-viktoryia.vercel.app/">
+    <meta property="og:title" content="Cyprus Total Service — SMM | Северный Кипр">
+    <meta property="og:description" content="Контент, реклама и заявки для премиум-недвижимости на Северном Кипре. Съёмка, монтаж, ведение соцсетей и таргет.">
+    <meta property="og:image" content="https://smm-viktoryia.vercel.app/assets/images/hero-arch.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="./dist/bundle.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="hidden" aria-hidden="true">
+        <symbol id="icon-phone" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.25 1.01l-2.2 2.22z"/>
+        </symbol>
+        <symbol id="icon-telegram" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22 3L2 10.5l6.5 2L18 7 9.5 14.5v3L13 16l5.5 4L22 3z"/>
+        </symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/>
+        </symbol>
+        <symbol id="icon-play" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+        </symbol>
+    </svg>
+
+    <header class="fixed top-0 z-40 w-full border-b border-white/10 bg-brand-ink/85 shadow-sm shadow-black/40 backdrop-blur-xl">
+        <nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 lg:px-6" aria-label="Основная навигация">
+            <a href="#section-main" class="flex items-center gap-3 text-lg font-bold text-white">
+                <img src="./assets/images/cyprus-total-logo.png" alt="Cyprus Total Service" width="44" height="44" class="h-11 w-11 shrink-0 rounded-lg object-cover ring-1 ring-white/10">
+                <span class="leading-tight">
+                    <span class="block text-sm font-extrabold tracking-tight text-transparent bg-hero-gradient bg-clip-text">Cyprus Total Service | SMM</span>
+                    <span class="block text-[10px] font-semibold uppercase tracking-[0.15em] text-slate-400">SMM · Северный Кипр</span>
+                </span>
+            </a>
+
+            <div data-nav-menu class="absolute left-0 right-0 top-full hidden border-b border-white/10 bg-brand-ink px-4 py-4 shadow-lg lg:static lg:flex lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
+                <ul class="flex flex-col gap-1 lg:flex-row lg:items-center lg:gap-5">
+                    <li><a data-nav-link class="nav-link block py-2 lg:py-0" href="#section-about">Кто я</a></li>
+                    <li><a data-nav-link class="nav-link block py-2 lg:py-0" href="#section-portfolio">Форматы</a></li>
+                    <li><a data-nav-link class="nav-link block py-2 lg:py-0" href="#section-system">Услуги</a></li>
+                    <li><a data-nav-link class="nav-link block py-2 lg:py-0" href="#section-packages">Пакеты</a></li>
+                    <li><a data-nav-link class="nav-link block py-2 lg:py-0" href="#section-faq">FAQ</a></li>
+                    <li><a data-nav-link class="nav-link block py-2 lg:py-0" href="#section-contact">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <a href="https://t.me/cyprustotalservice" class="hidden items-center gap-2 text-sm font-semibold text-slate-300 hover:text-accent md:inline-flex" target="_blank" rel="noopener noreferrer">
+                    <svg class="h-4 w-4 text-accent" aria-hidden="true"><use href="#icon-telegram"></use></svg>
+                    <span>Telegram</span>
+                </a>
+                <div class="lang-switcher" data-lang-switcher aria-label="Переключение языка">
+                    <button type="button" class="lang-switcher__btn is-active" data-lang="ru">RU</button>
+                    <button type="button" class="lang-switcher__btn" data-lang="en">EN</button>
+                    <button type="button" class="lang-switcher__btn" data-lang="tr">TR</button>
+                </div>
+                <button type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 lg:hidden" data-nav-toggle aria-expanded="false" aria-label="Открыть меню">
+                    <svg class="h-5 w-5 text-slate-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="section-main" class="section-shell scroll-mt-header bg-mesh-violet pt-24 pb-16 lg:pt-32 lg:pb-24">
+            <div class="section-blob-violet" aria-hidden="true"></div>
+            <div class="section-blob-pink" aria-hidden="true"></div>
+            <div class="section-dots pointer-events-none absolute inset-0 opacity-60" aria-hidden="true"></div>
+            <div class="section-blob-orange !left-auto !right-1/4 !top-1/3" aria-hidden="true"></div>
+            <div class="relative mx-auto grid max-w-6xl items-center gap-12 px-4 lg:grid-cols-2 lg:px-6">
+                <div data-reveal>
+                    <span class="tag tag--bright">Cyprus Total Service · SMM</span>
+                    <h1 class="mt-4 font-extrabold leading-tight tracking-tight">
+                        <span class="block text-4xl text-gradient sm:text-5xl lg:text-6xl">Заявки на просмотр и&nbsp;бронь</span>
+                        <span class="mt-3 block text-xl text-white sm:text-2xl lg:text-3xl">через короткий контент и&nbsp;рекламу на&nbsp;Северном Кипре</span>
+                    </h1>
+                    <p class="mt-6 text-lg leading-relaxed text-slate-300">
+                        Съёмка объектов, монтаж Reels / TikTok / Shorts, ведение соцсетей и&nbsp;таргет Meta.
+                        Один специалист вместо команды из&nbsp;3–4&nbsp;человек&nbsp;— от&nbsp;контента до&nbsp;лидов.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#section-packages" class="btn-primary">Пакеты с рекламой</a>
+                        <a href="https://t.me/cyprustotalservice" class="btn-outline" target="_blank" rel="noopener noreferrer">Обсудить задачу</a>
+                    </div>
+                    <p class="mt-4 text-sm text-slate-400">Для заявок на&nbsp;просмотр и&nbsp;бронь выгоднее пакеты «Контент&nbsp;+&nbsp;Реклама» или «Система продаж»</p>
+                    <div class="mt-10 grid gap-3 sm:grid-cols-3">
+                        <div class="stat-pill">
+                            <span class="stat-pill__value">Контент</span>
+                            <span class="mt-1 block text-xs text-slate-400">съёмка и&nbsp;монтаж</span>
+                        </div>
+                        <div class="stat-pill">
+                            <span class="stat-pill__value">Реклама</span>
+                            <span class="mt-1 block text-xs text-slate-400">Meta &amp;&nbsp;TikTok</span>
+                        </div>
+                        <div class="stat-pill">
+                            <span class="stat-pill__value">Заявки</span>
+                            <span class="mt-1 block text-xs text-slate-400">лиды и&nbsp;брони</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative" data-reveal>
+                    <div class="hero-frame__glow" aria-hidden="true"></div>
+                    <div class="hero-frame">
+                        <div class="relative mx-auto aspect-[4/5] max-w-sm">
+                            <img src="./assets/images/hero-arch.jpg" alt="Премиум-вилла — объект для Reels и TikTok" width="400" height="500" class="h-full w-full rounded-2xl object-cover shadow-md">
+                            <div class="absolute -bottom-4 -left-4 w-[44%] aspect-[3/4] overflow-hidden rounded-2xl shadow-glow ring-2 ring-accent/40">
+                                <img src="./assets/images/hero-portrait.png" alt="Виктория — SMM-специалист Cyprus Total Service" width="176" height="234" class="h-full w-full object-cover object-center">
+                            </div>
+                        </div>
+                        <div class="mt-6 flex flex-wrap justify-center gap-2">
+                            <span class="tag">TikTok</span>
+                            <span class="tag">Reels</span>
+                            <span class="tag">Shorts</span>
+                            <span class="tag tag--bright">Meta Ads</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="section-about" class="section-shell scroll-mt-header bg-section-glow py-16 lg:py-24">
+            <div class="section-blob-orange" aria-hidden="true"></div>
+            <div class="section-blob-violet !left-auto !right-0 !top-auto !bottom-8" aria-hidden="true"></div>
+            <div class="relative mx-auto max-w-6xl px-4 lg:px-6">
+                <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+                    <div data-reveal>
+                        <span class="tag">Виктория · Cyprus Total Service</span>
+                        <h2 class="section-title section-title--accent mt-4">Кто я</h2>
+                        <p class="section-subtitle">
+                            Я&nbsp;— SMM-специалист и&nbsp;контент-креатор на&nbsp;Северном Кипре. Работаю с&nbsp;премиум-недвижимостью:
+                            агентствами, застройщиками и&nbsp;владельцами объектов. Фокус&nbsp;— не&nbsp;«просто посты»,
+                            а&nbsp;контент и&nbsp;реклама, которые приводят заявки на&nbsp;просмотр, аренду и&nbsp;продажу.
+                        </p>
+                        <ul class="mt-6 space-y-3 text-sm text-slate-300">
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>TikTok, Instagram Reels, YouTube Shorts</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>Meta Ads и&nbsp;TikTok Ads под лиды и&nbsp;сообщения</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>Съёмка на&nbsp;объекте + монтаж + запуск в&nbsp;одном цикле</span></li>
+                        </ul>
+                    </div>
+                    <div data-reveal class="img-gradient-ring">
+                        <img src="./assets/images/about-smm.jpg" alt="Рабочее место SMM: камера, смартфон и аналитика" width="560" height="360" class="w-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section id="section-benefits" class="section-shell scroll-mt-header bg-mesh-soft py-16 lg:py-24">
+            <div class="section-blob-pink !right-auto !left-8 !top-16" aria-hidden="true"></div>
+            <div class="section-dots pointer-events-none absolute inset-0 opacity-50" aria-hidden="true"></div>
+            <div class="section-blob-violet !bottom-0 !top-auto !left-auto !right-0" aria-hidden="true"></div>
+            <div class="relative mx-auto max-w-6xl px-4 lg:px-6">
+                <div data-reveal>
+                    <h2 class="section-title section-title--accent">Почему это выгодно вам</h2>
+                    <p class="section-subtitle">
+                        Вместо команды из&nbsp;3–4&nbsp;человек (съёмщик + монтажёр + таргетолог + контент-менеджер) вы&nbsp;получаете:
+                    </p>
+                </div>
+
+                <div class="mt-12 grid gap-6 md:grid-cols-3">
+                    <article class="card" data-reveal>
+                        <span class="tag">Под ключ</span>
+                        <h3 class="mt-4 text-xl font-bold text-white">Одного специалиста</h3>
+                        <p class="mt-3 text-sm leading-relaxed text-slate-300">Единый стиль контента и&nbsp;стратегии — без разрозненных подрядчиков и&nbsp;потери фирменного стиля.</p>
+                    </article>
+                    <article class="card card-featured" data-reveal>
+                        <span class="tag tag--bright">Скорость</span>
+                        <h3 class="mt-4 text-xl font-bold text-white">Быстрый цикл</h3>
+                        <p class="mt-3 text-sm leading-relaxed text-slate-300">Снял → смонтировал → запустил рекламу. Минимум согласований и&nbsp;максимум скорости выхода контента.</p>
+                    </article>
+                    <article class="card" data-reveal>
+                        <span class="tag tag--coral">Экономия</span>
+                        <h3 class="mt-4 text-xl font-bold text-white">Меньше затрат</h3>
+                        <p class="mt-3 text-sm leading-relaxed text-slate-300">Пакет «Контент&nbsp;+&nbsp;Реклама» за&nbsp;1000&nbsp;£ заменяет команду из&nbsp;3–4&nbsp;специалистов и&nbsp;сразу работает на&nbsp;заявки.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio formats -->
+        <section id="section-portfolio" class="section-shell scroll-mt-header bg-section-glow py-16 lg:py-24">
+            <div class="section-blob-orange" aria-hidden="true"></div>
+            <div class="relative mx-auto max-w-6xl px-4 lg:px-6">
+                <div class="text-center" data-reveal>
+                    <h2 class="section-title section-title--accent section-title--center">Форматы контента</h2>
+                    <p class="section-subtitle mx-auto">То, что реально работает для недвижимости в&nbsp;коротких видео</p>
+                </div>
+
+                <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                    <article class="stat-pill text-center" data-reveal>
+                        <span class="stat-pill__value !text-xl">Walkthrough</span>
+                        <p class="mt-2 text-sm text-slate-400">Обзор апартаментов от&nbsp;входа до&nbsp;вида</p>
+                    </article>
+                    <article class="stat-pill text-center" data-reveal>
+                        <span class="stat-pill__value !text-xl">Lifestyle</span>
+                        <p class="mt-2 text-sm text-slate-400">Жизнь на&nbsp;Кипре, локации, атмосфера</p>
+                    </article>
+                    <article class="stat-pill text-center" data-reveal>
+                        <span class="stat-pill__value !text-xl">Offer / CTA</span>
+                        <p class="mt-2 text-sm text-slate-400">Цена, условия, призыв написать</p>
+                    </article>
+                    <article class="stat-pill text-center" data-reveal>
+                        <span class="stat-pill__value !text-xl">UGC-стиль</span>
+                        <p class="mt-2 text-sm text-slate-400">Живой кадр в&nbsp;кадре — выше доверие</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- System -->
+        <section id="section-system" class="section-shell scroll-mt-header bg-mesh-violet py-16 lg:py-24">
+            <div class="section-blob-violet !top-auto !bottom-12" aria-hidden="true"></div>
+            <div class="relative mx-auto max-w-6xl px-4 lg:px-6">
+                <div class="section-dots pointer-events-none absolute inset-0 opacity-40" aria-hidden="true"></div>
+                <div class="text-center" data-reveal>
+                    <h2 class="section-title section-title--accent section-title--center">Что входит в&nbsp;систему продвижения</h2>
+                    <p class="section-subtitle mx-auto">Полный цикл: от&nbsp;съёмки контента до&nbsp;лидогенерации и&nbsp;аналитики</p>
+                </div>
+
+                <div class="mt-12 grid gap-6 lg:grid-cols-3">
+                    <article class="card" data-reveal>
+                        <span class="tag">01</span>
+                        <h3 class="mt-4 text-xl font-bold text-white">Контент-продакшн</h3>
+                        <ul class="mt-4 space-y-2 text-sm leading-relaxed text-slate-300">
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>съёмка апартаментов / комплексов</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>сценарии под аренду и&nbsp;продажи</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>монтаж вирусных коротких видео</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>адаптация под TikTok / Reels / Shorts</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>визуальный стиль под премиум-недвижимость</span></li>
+                        </ul>
+                    </article>
+                    <article class="card card-featured" data-reveal>
+                        <span class="tag tag--bright">02 · Instagram</span>
+                        <h3 class="mt-4 text-xl font-bold text-white">Социальные сети</h3>
+                        <ul class="mt-4 space-y-2 text-sm leading-relaxed text-slate-300">
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>ведение Instagram / TikTok</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>оформление профиля под заявки</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>регулярный контент-план</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>публикации и&nbsp;сторис-стратегия</span></li>
+                        </ul>
+                    </article>
+                    <article class="card" data-reveal>
+                        <span class="tag">03</span>
+                        <h3 class="mt-4 text-xl font-bold text-white">Реклама и&nbsp;лидогенерация</h3>
+                        <ul class="mt-4 space-y-2 text-sm leading-relaxed text-slate-300">
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>настройка Meta Ads / TikTok Ads</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>тестирование аудиторий (туристы / аренда / релокация)</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>оптимизация под заявки (лиды / сообщения / бронирования)</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>аналитика эффективности</span></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section id="section-process" class="section-shell scroll-mt-header bg-mesh-soft py-16 lg:py-24">
+            <div class="section-blob-pink !left-auto !right-8" aria-hidden="true"></div>
+            <div class="relative mx-auto max-w-6xl px-4 lg:px-6">
+                <div class="text-center" data-reveal>
+                    <h2 class="section-title section-title--accent section-title--center">Как работаем</h2>
+                    <p class="section-subtitle mx-auto">Прозрачный процесс от&nbsp;первого созвона до&nbsp;отчёта по&nbsp;заявкам</p>
+                </div>
+
+                <ol class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                    <li class="card" data-reveal>
+                        <span class="step-num">1</span>
+                        <h3 class="mt-4 text-lg font-bold text-white">Бриф</h3>
+                        <p class="mt-2 text-sm text-slate-300">Цели, объекты, аудитория, доступы к&nbsp;аккаунтам и&nbsp;рекламным кабинетам.</p>
+                    </li>
+                    <li class="card" data-reveal>
+                        <span class="step-num">2</span>
+                        <h3 class="mt-4 text-lg font-bold text-white">Съёмка</h3>
+                        <p class="mt-2 text-sm text-slate-300">Выезд на&nbsp;объекты, сценарии под аренду/продажу, пакет сырья на&nbsp;месяц.</p>
+                    </li>
+                    <li class="card" data-reveal>
+                        <span class="step-num">3</span>
+                        <h3 class="mt-4 text-lg font-bold text-white">Запуск</h3>
+                        <p class="mt-2 text-sm text-slate-300">Монтаж, публикации, запуск рекламы и&nbsp;тесты креативов.</p>
+                    </li>
+                    <li class="card" data-reveal>
+                        <span class="step-num">4</span>
+                        <h3 class="mt-4 text-lg font-bold text-white">Отчёт</h3>
+                        <p class="mt-2 text-sm text-slate-300">Метрики, стоимость лида, выводы и&nbsp;план на&nbsp;следующий цикл.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Packages -->
+        <section id="section-packages" class="section-shell scroll-mt-header bg-section-glow py-16 lg:py-24">
+            <div class="section-blob-orange" aria-hidden="true"></div>
+            <div class="relative mx-auto max-w-6xl px-4 lg:px-6">
+                <div class="text-center" data-reveal>
+                    <span class="tag tag--bright mx-auto">Выгоднее с рекламой</span>
+                    <h2 class="section-title section-title--accent section-title--center mt-4">Пакеты сотрудничества</h2>
+                    <p class="section-subtitle mx-auto">Базовый пакет&nbsp;— только контент. Для заявок на&nbsp;просмотр и&nbsp;бронь выгоднее второй или третий пакет: там реклама, аналитика и&nbsp;работа на&nbsp;лиды.</p>
+                </div>
+
+                <div class="package-callout mx-auto mt-8 max-w-3xl text-center" data-reveal>
+                    <strong class="text-white">90% клиентов</strong> выбирают «Контент&nbsp;+&nbsp;Реклама» или «Система продаж»&nbsp;— контент без таргета редко окупается в&nbsp;недвижимости.
+                </div>
+
+                <div class="mt-12 grid items-stretch gap-6 lg:grid-cols-3">
+                    <article class="card card-muted flex flex-col" data-reveal>
+                        <span class="tag">Только контент</span>
+                        <h3 class="mt-4 text-xl font-bold text-white">«Контент»</h3>
+                        <p class="price-gradient mt-2 !text-2xl">700&nbsp;£<span class="text-base font-semibold text-slate-400"> / месяц</span></p>
+                        <p class="mt-3 text-xs leading-relaxed text-slate-500">Подходит, если нужны ролики без рекламы. Заявки и&nbsp;таргет не&nbsp;входят.</p>
+                        <ul class="mt-6 flex-1 space-y-2 text-sm text-slate-400">
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-slate-500" aria-hidden="true"><use href="#icon-check"></use></svg><span>контент-стратегия</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-slate-500" aria-hidden="true"><use href="#icon-check"></use></svg><span>съёмка контента</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-slate-500" aria-hidden="true"><use href="#icon-check"></use></svg><span>12–15&nbsp;видео в&nbsp;месяц</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-slate-500" aria-hidden="true"><use href="#icon-check"></use></svg><span>70%&nbsp;— короткие видео до&nbsp;15–20&nbsp;секунд</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-slate-500" aria-hidden="true"><use href="#icon-check"></use></svg><span>30%&nbsp;— полные обзоры до&nbsp;1&nbsp;минуты</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-slate-500" aria-hidden="true"><use href="#icon-check"></use></svg><span>базовое ведение соцсетей</span></li>
+                        </ul>
+                        <a href="https://t.me/cyprustotalservice" class="btn-outline mt-8 block w-full opacity-80 text-center" target="_blank" rel="noopener noreferrer">Только контент</a>
+                    </article>
+                    <article class="card card-featured card-recommended flex flex-col" data-reveal>
+                        <span class="tag tag--bright">Рекомендуем · лучший выбор</span>
+                        <h3 class="mt-4 text-xl font-bold text-white">«Контент + Реклама»</h3>
+                        <p class="price-gradient mt-2">1000&nbsp;£<span class="text-base font-semibold text-slate-400"> / месяц</span></p>
+                        <p class="mt-3 text-sm font-semibold text-accent">+300&nbsp;£ к&nbsp;базовому&nbsp;— но&nbsp;с&nbsp;рекламой, заявками и&nbsp;аналитикой</p>
+                        <ul class="mt-6 flex-1 space-y-2 text-sm text-slate-300">
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>всё из&nbsp;базового пакета</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>12–15&nbsp;видео в&nbsp;месяц</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>50%&nbsp;— короткие видео до&nbsp;15–20&nbsp;секунд</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>50%&nbsp;— полные обзоры до&nbsp;1&nbsp;минуты</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>настройка рекламы Meta Ads</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>ведение рекламных кампаний</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>тестирование креативов</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>работа на&nbsp;заявки и&nbsp;аналитика</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>ответы на&nbsp;комментарии</span></li>
+                        </ul>
+                        <a href="https://t.me/cyprustotalservice" class="btn-primary mt-8 block w-full text-center" target="_blank" rel="noopener noreferrer">Выбрать — выгоднее всего</a>
+                    </article>
+                    <article class="card card-premium flex flex-col" data-reveal>
+                        <span class="tag tag--coral">Максимум заявок</span>
+                        <h3 class="mt-4 text-xl font-bold text-white">«Система продаж»</h3>
+                        <p class="price-gradient mt-2">1300&nbsp;£<span class="text-base font-semibold text-slate-400"> / месяц</span></p>
+                        <p class="mt-3 text-sm font-semibold text-coral-soft">Для агентств, застройщиков и&nbsp;нескольких объектов</p>
+                        <ul class="mt-6 flex-1 space-y-2 text-sm text-slate-300">
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>всё из&nbsp;пакета «Контент&nbsp;+&nbsp;Реклама»</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>15+&nbsp;роликов в&nbsp;месяц</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>50%&nbsp;— короткие видео до&nbsp;15–20&nbsp;секунд</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>50%&nbsp;— полные обзоры до&nbsp;1&nbsp;минуты</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>ежедневная работа с&nbsp;контентом и&nbsp;рекламой</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>оптимизация под стоимость лида</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>стратегия под загрузку объектов</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>масштабирование заявок</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>ответы в&nbsp;директ</span></li>
+                        </ul>
+                        <a href="https://t.me/cyprustotalservice" class="btn-primary mt-8 block w-full text-center" target="_blank" rel="noopener noreferrer">Выбрать премиум</a>
+                    </article>
+                </div>
+
+                <p class="mt-8 text-center text-sm text-slate-400" data-reveal>
+                    Рекламный бюджет оплачивается отдельно и&nbsp;не&nbsp;входит в&nbsp;стоимость пакета.
+                </p>
+            </div>
+        </section>
+
+        <!-- Extra services -->
+        <section id="section-extra" class="section-shell scroll-mt-header bg-mesh-warm py-16 lg:py-24">
+            <div class="section-blob-pink" aria-hidden="true"></div>
+            <div class="relative mx-auto max-w-6xl px-4 lg:px-6">
+                <div class="text-center" data-reveal>
+                    <h2 class="section-title section-title--accent section-title--center">Дополнительные услуги</h2>
+                </div>
+
+                <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                    <article class="card" data-reveal>
+                        <h3 class="text-lg font-bold text-white">Актёрское участие</h3>
+                        <p class="price-gradient mt-2 !text-2xl">40&nbsp;£ <span class="text-sm font-medium text-slate-400">/ обзор</span></p>
+                        <p class="mt-3 text-sm text-slate-300">Сценарии, съёмка, монтаж. Живое присутствие в&nbsp;кадре повышает конверсию в&nbsp;аренду.</p>
+                    </article>
+                    <article class="card" data-reveal>
+                        <h3 class="text-lg font-bold text-white">Ролик по&nbsp;запросу</h3>
+                        <p class="price-gradient mt-2 !text-2xl">40&nbsp;£</p>
+                        <p class="mt-3 text-sm text-slate-300">Анализ идеи, подбор формата, сценарий, съёмка и&nbsp;монтаж.</p>
+                    </article>
+                    <article class="card" data-reveal>
+                        <h3 class="text-lg font-bold text-white">TikTok Ads Manager</h3>
+                        <p class="price-gradient mt-2 !text-2xl">150&nbsp;£</p>
+                        <p class="mt-3 text-sm text-slate-300">Настройка кабинета, запуск кампаний, тестирование креативов и&nbsp;аудиторий.</p>
+                    </article>
+                    <article class="card" data-reveal>
+                        <h3 class="text-lg font-bold text-white">Доп. площадки</h3>
+                        <ul class="mt-3 space-y-1 text-sm text-slate-300">
+                            <li>Facebook — +100&nbsp;£</li>
+                            <li>TikTok — +200&nbsp;£</li>
+                            <li>YouTube Shorts — +100&nbsp;£</li>
+                            <li>Telegram — по&nbsp;запросу</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <article class="card card-featured mt-6" data-reveal>
+                    <div class="grid gap-6 lg:grid-cols-2 lg:items-start">
+                        <div>
+                            <span class="tag">Масштабирование</span>
+                            <h3 class="mt-4 text-xl font-bold text-white">Лидогенерация</h3>
+                            <p class="price-gradient mt-2 !text-2xl">300&nbsp;£ / месяц + рекламный бюджет</p>
+                        </div>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>выстраивание воронки заявок</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>оптимизация под бронирования</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>создание и&nbsp;тестирование креативов</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>снижение стоимости лида и&nbsp;отчётность</span></li>
+                            <li class="flex gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><use href="#icon-check"></use></svg><span>перевод клиентов в&nbsp;Telegram</span></li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="section-faq" class="section-shell scroll-mt-header bg-mesh-soft py-16 lg:py-24">
+            <div class="section-blob-violet !bottom-0 !top-auto" aria-hidden="true"></div>
+            <div class="relative mx-auto max-w-3xl px-4 lg:px-6">
+                <div class="text-center" data-reveal>
+                    <h2 class="section-title section-title--accent section-title--center">Частые вопросы</h2>
+                </div>
+
+                <div class="mt-10" data-reveal>
+                    <details class="faq-item" open>
+                        <summary>Какой пакет выгоднее?</summary>
+                        <p class="mt-3 text-sm leading-relaxed text-slate-300">Базовый «Контент» (700&nbsp;£)&nbsp;— только ролики и&nbsp;ведение соцсетей, без рекламы и&nbsp;заявок. Для недвижимости окупается редко. <strong class="text-white">«Контент&nbsp;+&nbsp;Реклама»</strong> (1000&nbsp;£)&nbsp;— лучший баланс: за&nbsp;+300&nbsp;£ вы&nbsp;получаете таргет, лиды и&nbsp;аналитику. <strong class="text-white">«Система продаж»</strong> (1300&nbsp;£)&nbsp;— если несколько объектов, нужен ежедневный контроль, масштабирование броней и&nbsp;больше роликов в&nbsp;месяц.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Рекламный бюджет входит в&nbsp;пакет?</summary>
+                        <p class="mt-3 text-sm leading-relaxed text-slate-300">Нет. Стоимость пакета&nbsp;— работа специалиста. Бюджет на&nbsp;Meta / TikTok Ads оплачивается отдельно и&nbsp;согласовывается под ваши цели.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>С&nbsp;какого срока лучше начинать?</summary>
+                        <p class="mt-3 text-sm leading-relaxed text-slate-300">Оптимально от&nbsp;1–2&nbsp;месяцев: успеваем снять контент, протестировать креативы и&nbsp;настроить воронку заявок. Разовые ролики тоже возможны.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Что нужно от&nbsp;вас для старта?</summary>
+                        <p class="mt-3 text-sm leading-relaxed text-slate-300">Доступы к&nbsp;соцсетям (или права редактора), доступ к&nbsp;рекламному кабинету, список объектов и&nbsp;короткий бриф по&nbsp;целевой аудитории.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Работаете только с&nbsp;Instagram?</summary>
+                        <p class="mt-3 text-sm leading-relaxed text-slate-300">База пакетов&nbsp;— Instagram. TikTok, Facebook, YouTube Shorts и&nbsp;Telegram подключаются как дополнительные площадки.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Как часто приходят отчёты?</summary>
+                        <p class="mt-3 text-sm leading-relaxed text-slate-300">По&nbsp;рекламным пакетам&nbsp;— регулярная аналитика по&nbsp;лидам и&nbsp;стоимости заявки, плюс итог за&nbsp;месяц с&nbsp;выводами и&nbsp;планом.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="section-contact" class="section-shell scroll-mt-header bg-mesh-violet py-16 lg:py-24">
+            <div class="section-blob-violet !bottom-0 !top-auto" aria-hidden="true"></div>
+            <div class="section-blob-pink !left-8 !right-auto" aria-hidden="true"></div>
+            <div class="relative mx-auto max-w-6xl px-4 lg:px-6">
+                <div class="grid gap-12 lg:grid-cols-2">
+                    <div data-reveal>
+                        <h2 class="section-title section-title--accent">Обсудим ваш проект</h2>
+                        <p class="section-subtitle">Напишите&nbsp;— отвечу в&nbsp;течение рабочего дня и&nbsp;подберу пакет с&nbsp;рекламой под ваши объекты</p>
+
+                        <ul class="mt-8 space-y-4">
+                            <li>
+                                <a href="mailto:viktoryia.smm@gmail.com" class="flex items-center gap-3 text-slate-200 hover:text-accent">
+                                    <span class="flex h-5 w-5 items-center justify-center font-bold text-accent">@</span>
+                                    <span class="font-semibold">viktoryia.smm@gmail.com</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://t.me/cyprustotalservice" class="flex items-center gap-3 text-slate-200 hover:text-accent" target="_blank" rel="noopener noreferrer">
+                                    <svg class="h-5 w-5 text-accent" aria-hidden="true"><use href="#icon-telegram"></use></svg>
+                                    <span class="font-semibold">@cyprustotalservice — Telegram</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card surface-panel" data-reveal>
+                        <h3 class="text-lg font-bold text-white">Форма заявки временно скрыта</h3>
+                        <p class="mt-4 text-sm leading-relaxed text-slate-300">
+                            Пока можно связаться напрямую через Telegram или по email. Отвечу в течение рабочего дня.
+                        </p>
+                        <div class="mt-6 flex flex-wrap gap-3">
+                            <a href="https://t.me/cyprustotalservice" class="btn-primary" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+                            <a href="mailto:viktoryia.smm@gmail.com" class="btn-outline">Написать на email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="section-footer" class="relative overflow-hidden border-t border-white/10 bg-brand-ink py-10 text-slate-400">
+        <div class="pointer-events-none absolute inset-0 bg-hero-gradient opacity-15" aria-hidden="true"></div>
+        <div class="pointer-events-none absolute -left-20 top-0 h-40 w-40 rounded-full bg-accent/20 blur-3xl" aria-hidden="true"></div>
+        <div class="pointer-events-none absolute -right-20 bottom-0 h-40 w-40 rounded-full bg-coral/15 blur-3xl" aria-hidden="true"></div>
+        <div class="relative mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 text-center sm:flex-row sm:text-left lg:px-6">
+            <p class="text-sm">&copy; 2026 Cyprus Total Service — SMM. Все права защищены.</p>
+            <nav aria-label="Навигация в подвале">
+                <ul class="flex flex-wrap justify-center gap-4 text-sm">
+                    <li><a href="#section-about" class="hover:text-white">Кто я</a></li>
+                    <li><a href="#section-packages" class="hover:text-white">Пакеты</a></li>
+                    <li><a href="#section-faq" class="hover:text-white">FAQ</a></li>
+                    <li><a href="#section-contact" class="hover:text-white">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="./dist/bundle.js" defer></script>
+</body>
+
+</html>
