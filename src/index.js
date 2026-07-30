@@ -6,7 +6,6 @@ import modalHash from './components/modalHash';
 import revealOnScroll from './components/revealOnScroll';
 import contactForm from './components/contactForm';
 import languageSwitcher from './components/languageSwitcher';
-import videoGallery from './components/videoGallery';
 
 document.addEventListener('DOMContentLoaded', () => {
     languageSwitcher();
@@ -14,5 +13,4 @@ document.addEventListener('DOMContentLoaded', () => {
     modalHash();
     revealOnScroll();
     contactForm();
-    videoGallery();
 });
