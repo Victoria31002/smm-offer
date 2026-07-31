@@ -25,6 +25,28 @@
         @apply py-16 lg:py-24;
     }
 
+    .container {
+        @apply relative mx-auto box-border w-full max-w-6xl px-4 lg:px-6;
+    }
+
+    [data-reveal] {
+        @apply opacity-100 transition-opacity duration-700 ease-out;
+    }
+
+    .js-reveal [data-reveal]:not(.is-revealed) {
+        @apply opacity-0;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        [data-reveal] {
+            @apply translate-y-0 transition-[opacity,transform] duration-700 ease-out;
+        }
+
+        .js-reveal [data-reveal]:not(.is-revealed) {
+            @apply translate-y-3 opacity-0;
+        }
+    }
+
     .glass-card {
         @apply border border-white/10 bg-white/5 shadow-card backdrop-blur-lg;
     }
@@ -57,7 +79,7 @@
     }
 
     .card {
-        @apply glass-card rounded-2xl p-6 transition duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-glow-lg;
+        @apply glass-card box-border min-w-0 w-full rounded-2xl p-6 transition duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-glow-lg;
     }
 
     .card-featured {
@@ -77,7 +99,7 @@
     }
 
     .card-recommended {
-        @apply relative z-10 lg:-translate-y-1 lg:scale-[1.02] lg:shadow-glow-lg;
+        @apply relative z-10 lg:shadow-glow-lg;
     }
 
     .card-premium {
@@ -90,6 +112,74 @@
     .card-premium::before {
         content: '';
         @apply pointer-events-none absolute -left-8 -bottom-8 h-24 w-24 rounded-full bg-coral/20 blur-2xl;
+    }
+
+    .extra__header {
+        @apply text-center;
+    }
+
+    .extra__grid {
+        @apply mt-12 grid w-full min-w-0 grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4;
+    }
+
+    .extra-card {
+        @apply flex min-w-0 flex-col;
+    }
+
+    .extra-card__title {
+        @apply text-lg font-bold text-white;
+    }
+
+    .extra-card__price {
+        @apply mt-2 bg-hero-gradient bg-clip-text text-2xl font-extrabold text-transparent;
+    }
+
+    .extra-card__price-unit {
+        @apply text-sm font-medium text-slate-400;
+    }
+
+    .extra-card__text {
+        @apply mt-3 text-sm text-slate-300;
+    }
+
+    .extra-card__list {
+        @apply mt-3 space-y-2 text-sm text-slate-300;
+    }
+
+    .extra-card__row {
+        @apply flex min-w-0 items-baseline justify-between gap-3;
+    }
+
+    .extra-card__row-name {
+        @apply min-w-0 break-words;
+    }
+
+    .extra-card__row-price {
+        @apply shrink-0 bg-hero-gradient bg-clip-text text-xl font-extrabold text-transparent;
+    }
+
+    .extra-card__row-price--sm {
+        @apply text-sm font-extrabold;
+    }
+
+    .extra-lead {
+        @apply mt-10;
+    }
+
+    .extra-lead__layout {
+        @apply grid min-w-0 gap-6 lg:grid-cols-2 lg:items-start;
+    }
+
+    .extra-lead__title {
+        @apply mt-4 text-xl font-bold text-white;
+    }
+
+    .extra-lead__price {
+        @apply mt-2 break-words bg-hero-gradient bg-clip-text text-2xl font-extrabold text-transparent;
+    }
+
+    .extra-lead__list {
+        @apply space-y-2 text-sm text-slate-300;
     }
 
     .package-callout {

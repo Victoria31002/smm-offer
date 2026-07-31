@@ -1,8 +1,18 @@
 const revealOnScroll = () => {
     const items = document.querySelectorAll('[data-reveal]');
 
-    if (!items.length || !('IntersectionObserver' in window)) {
-        items.forEach((item) => item.classList.add('opacity-100', 'translate-y-0'));
+    if (!items.length) {
+        return;
+    }
+
+    document.documentElement.classList.add('js-reveal');
+
+    const reveal = (item) => {
+        item.classList.add('is-revealed');
+    };
+
+    if (!('IntersectionObserver' in window)) {
+        items.forEach(reveal);
         return;
     }
 
@@ -10,18 +20,15 @@ const revealOnScroll = () => {
         (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    reveal(entry.target);
                     observer.unobserve(entry.target);
                 }
             });
         },
-        { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+        { threshold: 0.12, rootMargin: '0px 0px -24px 0px' }
     );
 
-    items.forEach((item) => {
-        item.classList.add('opacity-0', 'translate-y-6', 'transition-all', 'duration-700');
-        observer.observe(item);
-    });
+    items.forEach((item) => observer.observe(item));
 };
 
 export default revealOnScroll;
