@@ -5,6 +5,7 @@
 @layer base {
     html {
         scroll-behavior: smooth;
+        --app-header-height: 4.25rem;
     }
 
     body {
@@ -280,8 +281,15 @@
 }
 
 @layer utilities {
+    /* Compensate section py-16 / lg:py-24 so titles sit under the fixed header */
     .scroll-mt-header {
-        scroll-margin-top: 5rem;
+        scroll-margin-top: calc(var(--app-header-height) - 4rem);
+    }
+
+    @media (min-width: 1024px) {
+        .scroll-mt-header {
+            scroll-margin-top: calc(var(--app-header-height) - 6rem);
+        }
     }
 
     .text-gradient {
