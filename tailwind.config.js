@@ -43,16 +43,9 @@ module.exports = {
                 card: '0 14px 36px -18px rgba(0, 0, 0, 0.65), 0 2px 10px -2px rgba(255, 255, 255, 0.04)',
             },
             animation: {
-                'blob-float': 'blob-float 9s ease-in-out infinite',
-                'blob-float-delayed': 'blob-float 11s ease-in-out 2s infinite',
                 'gradient-shift': 'gradient-shift 6s ease infinite',
             },
             keyframes: {
-                'blob-float': {
-                    '0%, 100%': { transform: 'translate(0, 0) scale(1)' },
-                    '33%': { transform: 'translate(24px, -18px) scale(1.06)' },
-                    '66%': { transform: 'translate(-16px, 12px) scale(0.96)' },
-                },
                 'gradient-shift': {
                     '0%, 100%': { backgroundPosition: '0% 50%' },
                     '50%': { backgroundPosition: '100% 50%' },

@@ -17,21 +17,8 @@
         @apply relative isolate overflow-hidden;
     }
 
-    .section-blob-violet {
-        @apply pointer-events-none absolute -left-16 top-8 h-72 w-72 rounded-full bg-accent/20 blur-3xl animate-blob-float;
-    }
-
-    .section-blob-pink {
-        @apply pointer-events-none absolute -right-12 bottom-4 h-80 w-80 rounded-full bg-coral/15 blur-3xl animate-blob-float-delayed;
-    }
-
-    .section-blob-orange {
-        @apply pointer-events-none absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-sky/20 blur-3xl animate-blob-float;
-    }
-
-    .section-dots {
-        background-image: radial-gradient(rgba(46, 230, 197, 0.16) 1.5px, transparent 1.5px);
-        background-size: 20px 20px;
+    .section-fill {
+        @apply flex min-h-screen flex-col justify-center py-16 lg:py-24;
     }
 
     .glass-card {
@@ -147,7 +134,6 @@
 
     .hero-frame__glow {
         @apply absolute -inset-6 rounded-[2rem] bg-hero-gradient opacity-25 blur-3xl;
-        animation: blob-float 8s ease-in-out infinite;
     }
 
     .img-gradient-ring {
@@ -210,10 +196,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .section-blob-violet,
-    .section-blob-pink,
-    .section-blob-orange,
-    .hero-frame__glow,
     .btn-primary {
         animation: none;
     }
